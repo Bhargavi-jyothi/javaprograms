@@ -1,0 +1,15 @@
+
+public class AmstrongNumber {
+	public int findAmstrong(int n) {
+		int sum=0;
+		while(n!=0) {
+			int rem=n%10;
+			int s=(int)Math.pow(rem,3);
+			 sum=sum+s;
+			 n=n/10;
+			
+		}
+		return sum;
+	}
+
+}

@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class Fibonacci {
+
+	public static void main(String[] args) {
+		int fib1=0;
+		int fib2=1;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the value up to which series has to be printed ");
+        int n=sc.nextInt();
+        findFibonacci( fib1, fib2, n);
+        
+	}
+	public static void findFibonacci(int fib1,int fib2,int n) {
+		if(n==1) {
+			System.out.print(fib1);
+		}
+		else if(n==2) {
+			System.out.print(fib1+" "+fib2);
+		}
+		else {
+			System.out.print(fib1+" "+fib2+" ");
+			for(int i=3;i<=n;i++) {
+				int nextNo=fib2+fib1;
+				System.out.print(nextNo);
+				fib1=fib2;
+				fib2=nextNo;
+			}
+		}
+		}
+	}
+
+

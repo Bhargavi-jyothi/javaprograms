@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class ReverseTheDigitsApp {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter a number");
+		int n=sc.nextInt();
+		ReverseTheDigits revDigit=new ReverseTheDigits();
+		System.out.println("reverse of the number is "+revDigit.reverseOfDigits(n));
+	
+
+	}
+}
